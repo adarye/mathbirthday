@@ -1,0 +1,162 @@
+   /* Font */
+   @import url('https://fonts.googleapis.com/css?family=Quicksand:400,700');
+
+   /* Design */
+   *,
+   *::before,
+   *::after {
+       box-sizing: border-box;
+   }
+
+   html {
+       background-color: #c6dae7;
+   }
+
+   body {
+       color: #272727;
+       font-family: 'Quicksand', serif;
+       font-style: normal;
+       font-weight: 400;
+       letter-spacing: 0;
+       padding: 1rem;
+   }
+
+   .main {
+       max-width: 1200px;
+       margin: 0 auto;
+   }
+
+   h1 {
+       font-size: 24px;
+       font-weight: 400;
+       text-align: center;
+   }
+
+   img {
+       height: auto;
+       max-width: 100%;
+       vertical-align: middle;
+   }
+
+   .btn {
+       color: #073278;
+       padding: 0.8rem;
+       font-size: 14px;
+       text-transform: uppercase;
+       border-radius: 4px;
+       font-weight: 400;
+       display: block;
+       width: 100%;
+       cursor: pointer;
+       border: 1px solid rgba(255, 255, 255, 0.2);
+       background: transparent;
+   }
+
+   .btn:hover {
+       background-color: rgba(255, 255, 255, 0.12);
+   }
+
+   .cards {
+       display: flex;
+       flex-wrap: wrap;
+       list-style: none;
+       margin: 0;
+       padding: 0;
+   }
+
+   .cards_item {
+       display: block;
+       padding: 1rem;
+       width: 100%;
+   }
+   #date_selector {
+       width: 35%;
+       border:rgba(198, 223, 228, 1);
+       height: 28px;
+
+   }
+ input:focus {
+       outline-color:rgba(198, 223, 228, 0.5) !important;
+   }
+
+   @media (min-width: 20rem) {
+    #date_selector{
+        width: 100% !important;
+    }
+}
+@media (min-width: 12rem) {
+    #date_selector{
+        width: 100% !important;
+    }
+}
+   @media (min-width: 40rem) {
+       .cards_item {
+           width: 50%;
+           min-width: 100%;
+       }
+       #date_selector{
+           width: 60% !important;
+       }
+   }
+
+
+
+   @media (min-width: 56rem) {
+       .cards_item {
+           width: 33.3333%;
+           min-width: 100%;
+       }
+       #date_selector{
+           width: 42%  !important;
+       }
+   }
+
+   .card {
+       background-color: white;
+       border-radius: 0.25rem;
+       box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
+       display: flex;
+       flex-direction: column;
+       overflow: hidden;
+   }
+
+   .card_content {
+       padding: 1rem;
+       background: linear-gradient(90deg, rgba(168, 163, 240, 1) 0%, rgba(198, 223, 228, 1) 0%, rgba(245, 248, 252, 0.6082808123249299) 100%);
+   }
+
+   .card_title {
+       color: #073278;
+       font-size: 1.4rem;
+       font-weight: 700;
+       letter-spacing: 1px;
+       text-transform: capitalize;
+       margin: 0px;
+       text-align: center;
+   }
+   .title-container{
+    font-size: 1.6rem;
+   }
+
+   .card_text {
+       color: #073278;
+       font-size: 1.2rem;
+       line-height: 1.5;
+       margin-bottom: 1.25rem;
+       font-weight: 400;
+   }
+
+   .date-selector {
+       width: 100%;
+   }
+
+   .date_container {
+       margin-top: 8px;
+   }
+
+   .made_by {
+       font-weight: 400;
+       font-size: 13px;
+       margin-top: 35px;
+       text-align: center;
+   }
